@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pagination .page-item.active .page-link {
+    background-color: rgb(51 65 85 / var(--tw-bg-opacity)) /* #334155 */;;
+    border-color: #787878;
+    color: white;
+}
+
+.pagination .page-link {
+    color: #787878;
+}
+
+.pagination .page-link:hover {
+    background-color: #e9ecef;
+    border-color: #007787878bff;
+}
+
