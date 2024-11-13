@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\SalesController;
 
 Route::view('/', 'posts.index')->name('home');
 
@@ -20,4 +21,10 @@ Route::view('/login','auth.login')->middleware('guest')->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::resource('items', ItemController::class)->middleware('auth');
+
+
+
+Route::get('/sales', [SalesController::class, 'index'])->name('sales.index');
+Route::post('/sales', [SalesController::class, 'store'])->name('sales.store');
+
 

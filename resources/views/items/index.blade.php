@@ -82,7 +82,7 @@
                                     </th>
                                     <th class="py-3 px-6 text-right hover:text-slate-400">
                                         <a href="{{ route('items.index', ['sortBy' => 'price', 'sortOrder' => $sortBy == 'price' && $sortOrder == 'asc' ? 'desc' : 'asc']) }}">
-                                            Price (LKR)
+                                            Price (INR)
                                             @if ($sortBy == 'price')
                                                 <i class="fas fa-sort-{{ $sortOrder == 'asc' ? 'up' : 'down' }}"></i>
                                             @endif

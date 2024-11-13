@@ -25,8 +25,8 @@
 
         <!-- Price (Decimal, item price) -->
         <div class="mb-3">
-            <label for="price" class="block text-sm font-medium text-gray-700">Price (LKR)</label>
-            <p class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm sm:text-sm bg-gray-100">{{ number_format($item->price, 2) }} LKR</p>
+            <label for="price" class="block text-sm font-medium text-gray-700">Price (INR)</label>
+            <p class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm sm:text-sm bg-gray-100">{{ number_format($item->price, 2) }} INR</p>
         </div>
 
         <!-- Back to List Button -->
