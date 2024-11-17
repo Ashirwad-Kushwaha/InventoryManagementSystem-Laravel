@@ -5,6 +5,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\SalesController;
+use App\Http\Controllers\InvoiceController;
+
 
 Route::view('/', 'posts.index')->name('home');
 
@@ -26,5 +28,5 @@ Route::resource('items', ItemController::class)->middleware('auth');
 
 Route::get('/sales', [SalesController::class, 'index'])->name('sales.index');
 Route::post('/sales', [SalesController::class, 'store'])->name('sales.store');
-
+Route::get('/invoices/{id}', [InvoiceController::class, 'show'])->name('invoices.show');
 
